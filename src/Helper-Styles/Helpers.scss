@@ -1,0 +1,25 @@
+@mixin font-format($size , $weight , $type) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $type , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin list-format($left , $right) {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: $left;
+    li{
+        margin-right: $right;
+    }
+    li:last-child {
+        margin-right: 0px;
+    }
+}
+
+@mixin config-btn($width , $height , $rad , $color) {
+    width: $width;
+    height: $height;
+    border-radius: $rad;
+    background-color:  $color;
+    border: none;
+}

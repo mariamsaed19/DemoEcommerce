@@ -1,0 +1,76 @@
+@import "../../Helper-Styles/Helpers.scss";
+.cont {
+  padding-left: 160px;
+}
+.cart-header {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.cart {
+  @include font-format(20px, bold, Poppins);
+}
+#col1 {
+  width: 470px;
+}
+#col2,
+#col3,
+#col5 {
+  width: 160px;
+}
+#col4 {
+  width: 180px;
+}
+.cart-details {
+  height: 260px;
+  overflow: auto;
+  width: 95%;
+  th {
+    @include font-format(14px, 300, Poppins);
+    color: #c1c1c1;
+  }
+  thead {
+    height: 52px;
+    text-align: left;
+  }
+  tbody tr {
+    height: 105px;
+  }
+}
+.product {
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas:
+    "img name"
+    "img code";
+}
+.product-img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  grid-area: img;
+}
+.product-name {
+  padding-left: 40px;
+  grid-area: name;
+  @include font-format(16px, bold, Poppins);
+}
+.product-code {
+  @include font-format(13px, 100, Poppins);
+  padding-left: 40px;
+  grid-area: code;
+  color: #c4c4c4;
+  
+}
+.product-description {
+  @include font-format(14px, 300, Poppins);
+}
+.product-price {
+  @include font-format(16px, bold, Poppins);
+}
+
+@media screen and (max-width:750px) {
+  .cart-details{
+    width:500px;
+    overflow: auto;
+  }
+}

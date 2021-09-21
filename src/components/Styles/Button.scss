@@ -1,0 +1,5 @@
+@import "../../Helper-Styles/Helpers.scss";
+.btn{
+    @include font-format(13px,bold,Poppins);
+    cursor: pointer;
+}

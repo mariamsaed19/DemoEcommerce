@@ -1,0 +1,96 @@
+@import "../../Helper-Styles/Helpers.scss";
+.check-header{
+    margin-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    @include font-format(20px, bold, Poppins);
+}
+.check-cont{
+    margin-left: 150px;
+    display: grid;
+    grid-template-areas: "info pay cart"
+    "footer footer footer";
+}
+.info{
+    grid-area: info;
+}
+
+.log-in{
+    @include config-btn(120px, 49px, 25px, #fbb03b);
+}
+.sign-up{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    @include config-btn(120px, 49px, 25px, #ffffff);
+    border: 1px solid #d8d8d8;
+}
+.check-info{
+    margin-bottom: 50px;
+    @include font-format(14px, bold, Poppins);
+}
+.payment{
+    grid-area: pay;
+}
+.check-cart{
+    grid-area: cart;
+    .total{
+        margin-top: 25px;
+        @include config-btn(240px, 49px, 25px, #F1F1F1);
+    }
+}
+.check-grid-cart{
+    display: grid;
+    grid-template-areas: "img  title title"
+    "img code price";
+    img{
+        grid-area: img;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .check-name{
+        grid-area: title;
+        margin-left: -30px;
+        @include font-format(14px, bold, Poppins);
+
+    }
+    .check-code{
+        margin-left: -30px;
+        grid-area: code;
+        @include font-format(12px, bold, Poppins);
+        color: #C4C4C4;
+    }
+    .check-price{
+        grid-area: price;
+        @include font-format(14px, bold, Poppins);
+    }
+}
+
+.check-footer{
+    grid-area: footer;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    .b1{
+        margin-left: 50%;
+        margin-top: -20px;
+        @include config-btn(240px, 49px, 25px, #ffffff);
+        border: 1px solid #C4C4C4;
+    }
+    .b2{
+        margin-top: -20px;
+        margin-left: 20px;
+        @include config-btn(240px, 49px, 25px, #FBB03B);
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .check-cont{
+        margin-left: 150px;
+        display: grid;
+        grid-template-areas: "info"
+        "pay"
+        "cart"
+        "footer";
+    }
+}

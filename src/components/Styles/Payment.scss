@@ -1,0 +1,52 @@
+@import "../../Helper-Styles/Helpers.scss";
+.pay-text {
+  padding-bottom: 20px;
+  @include font-format(14px, bold, Poppins);
+}
+.method-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  row-gap: 10px;
+  column-gap: 20px;
+  padding-bottom: 20px;
+}
+.pay-method {
+  @include config-btn(85px, 40px, 20px, none);
+  padding: 5px;
+  border: 1px solid #d8d8d8;
+  img {
+    display: block;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.deli-container {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    column-gap: 20px;
+    row-gap: 10px;
+    div{
+        @include config-btn(160px, 50px, 20px, none);    
+        border: 1px solid #d8d8d8;
+        display: flex;
+        align-items: center;
+        &:hover{
+          cursor: pointer;
+        }
+    }
+    img{
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    span{
+        margin-left: 10px;
+       @include font-format(14px, bold, Poppins);
+  }
+}
+

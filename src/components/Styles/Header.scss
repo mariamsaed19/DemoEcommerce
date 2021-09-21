@@ -1,0 +1,59 @@
+@import "../../Helper-Styles/Helpers";
+.header{
+    padding-left: 160px;
+    width: 100%;
+    height: 73px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 3px solid #E5E5E5;
+    div,li{
+        display: inline;
+    }
+
+}
+.shop-icon{
+    width: 45px;
+    height: 35px;
+}
+.shop-title{
+    margin-top: 5px;
+    margin-left: 23px;
+    @include font-format(19px , 400 , Campton);
+    span{
+        color: #FBB03B;
+    }
+}
+.shop-catgs{
+    @include font-format(14px,bold,Poppins);
+    @include list-format(220px,65px);
+}
+.shop-icons{
+    @include list-format(280px,35px);
+}
+
+
+@media only screen and (max-width : 1100px) {
+    .header{
+        padding: 5px;
+    }
+    .shop-catgs{
+        @include font-format(12px,bold,Poppins);
+        @include list-format(150px,10px);
+    }
+    .shop-icons{
+        @include list-format(150px,5px);
+    }
+}
+
+@media only screen and (max-width: 700px)  {
+    .header{
+        padding: 5px;
+    }
+    .shop-catgs{
+        @include font-format(10px,bold,Poppins);
+        @include list-format(20px,8px);
+    }
+    .shop-icons{
+        @include list-format(30px,3px);
+    }
+}

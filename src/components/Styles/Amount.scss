@@ -1,0 +1,24 @@
+@import "../../Helper-Styles/Helpers.scss";
+.amount-container{
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    background-color: white;
+    @include font-format(16px,bold,Poppins);
+    @include config-btn(130px,49px,50px,white);
+    border: 1px solid #D8D8D8;
+
+    button{
+        border:none;
+        background: none;
+        margin-left: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        &:disabled{
+            pointer-events: none;
+        }
+    }
+    div{
+        margin-left: 20px;
+    }
+}
